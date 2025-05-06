@@ -21,7 +21,7 @@ export function Excenplar({ img, name, prize, info, onClickHandler, id }) {
       prize,
       selectedSize,
       color: info.color,
-      id
+      id,img
     });
   }
   return (

@@ -8,7 +8,8 @@ import {Contact} from "./components/navigation/Contact"
 import {About} from "./components/navigation/About"
 import { Credit } from "./components/navigation/Credit"
 import "./App.css"
-import { Been } from "./components/Been"
+// import { Been } from "./components/Been"
+import { BinNavigate } from "./components/navigation/BinNavigate"
 
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
       };
       setBeen(updatedBeen);
     } else {
-      console.log(3,[...been, { ...data, count: 1 }])
       setBeen([...been, { ...data, count: 1 }]);
     }
   }
@@ -46,12 +46,13 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
           <Route path="/credit" element={<Credit></Credit>}></Route>
+          <Route path="/bin" element={<BinNavigate bin={been} setBin={setBeen}></BinNavigate>}></Route>
            {data.map(el => {
             return <Route key={el.id} path={`/${el.id}`} element={<Excenplar img={el.img} onClickHandler={onClickHandler} prize={el.prize} info={el.info} name={el.name} id={el.id}></Excenplar>}></Route>
            })}
         </Routes>
         </BrowserRouter>
-        <Been arr={been}>Been</Been>
+        {/* <Been arr={been}>Been</Been> */}
     </> 
   )
 }

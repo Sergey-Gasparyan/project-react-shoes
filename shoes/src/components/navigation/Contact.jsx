@@ -1,7 +1,7 @@
 import { FaInstagram } from 'react-icons/fa';
 import { FaSnapchatGhost } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
-import "./Credit.css"
+
 
 export function Contact () {
     return (
