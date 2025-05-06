@@ -8,7 +8,6 @@ import {Contact} from "./components/navigation/Contact"
 import {About} from "./components/navigation/About"
 import { Credit } from "./components/navigation/Credit"
 import "./App.css"
-// import { Been } from "./components/Been"
 import { BinNavigate } from "./components/navigation/BinNavigate"
 
 
