@@ -10,7 +10,7 @@ clear
 node_modules
 dist
 dist-ssr
-*.local
+*.local git
 
 # Editor directories and files
 .vscode/*
