@@ -47,11 +47,10 @@ function App() {
           <Route path="/credit" element={<Credit></Credit>}></Route>
           <Route path="/bin" element={<BinNavigate bin={been} setBin={setBeen}></BinNavigate>}></Route>
            {data.map(el => {
-            return <Route key={el.id} path={`/${el.id}`} element={<Excenplar img={el.img} onClickHandler={onClickHandler} prize={el.prize} info={el.info} name={el.name} id={el.id}></Excenplar>}></Route>
+            return <Route key={el.id} path={`/${el.id}`} element={<Excenplar img={el.img} description={el.information} onClickHandler={onClickHandler} prize={el.prize} info={el.info} name={el.name} id={el.id}></Excenplar>}></Route>
            })}
         </Routes>
         </BrowserRouter>
-        {/* <Been arr={been}>Been</Been> */}
     </> 
   )
 }

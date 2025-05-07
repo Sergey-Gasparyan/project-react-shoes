@@ -1,7 +1,7 @@
 
 import { ChooseSize } from "./ChooseSize";
 import { useState } from "react";
-export function Excenplar({ img, name, prize, info, onClickHandler, id }) {
+export function Excenplar({ img, name, prize, info, onClickHandler, id ,description }) {
   const [selectedSize, setSelectedSize] = useState("")
   const [showWarning, setShowWarning] = useState(false)
 
@@ -21,7 +21,8 @@ export function Excenplar({ img, name, prize, info, onClickHandler, id }) {
       prize,
       selectedSize,
       color: info.color,
-      id,img
+      id,
+      img
     });
   }
   return (
@@ -54,11 +55,7 @@ export function Excenplar({ img, name, prize, info, onClickHandler, id }) {
           <p>Color : {info.color}</p>
           <p> Prize : {prize}</p>
           <p>
-            Durable construction, comfortable Nike Air cushioning and grippy
-            outsoles make the AF-1 an everyday fave. We added a hint of sparkle
-            to this pair for style that shines. Colour Shown: Light Iron
-            Ore/White/Black/Light Iron Ore Style: FZ1021-001 Country/Region of
-            Origin: Indonesia
+          {description}
           </p>
         </div>
       </div>

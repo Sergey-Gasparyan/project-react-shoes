@@ -34,9 +34,9 @@ export function BinNavigate({bin,setBin}) {
   }
 
   if(!displayedBin.length && bin.length > 0) return (
-    <div style={{backgroundColor:'white',  maxHeight: 'calc(100vh - 200px)', overflowY: 'auto',marginTop:"200px",color :"grey",marginLeft:"70px",width: 'calc(100vw - 200px)',fontSize:"28px"}}>
+    <div style={{backgroundColor:'white',  maxHeight: 'calc(100vh - 200px)', overflowY: 'auto',marginTop:"200px",color :"grey",marginLeft:"70px",width:'calc(100vw - 200px)',fontSize:"28px" ,position: 'relative',}}>
       <p style={{marginLeft:"30px"}}>Not found that item.</p>
-      <button onClick={() => setDisplayedBin(bin)}>Go back to All bin</button>
+      <button style={{position:"absolute",right:"20px",bottom:"20px",top:"15px"}} onClick={() => setDisplayedBin(bin)}>Go back to All bin</button>
     </div>
     )
 
